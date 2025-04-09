@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do Liste</title>
-
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -12,16 +11,57 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="continer">
       <header>
         <h1>To Do Liste</h1>
         <button class="add-task">
-          <i class="fa-solid fa-plus">Add Task</i>
+          <i class="fa-solid fa-plus"></i>
         </button>
       </header>
+      <main>
+        <div id="task-container" class="task-container"></div>
+      </main>
+      <div id="task-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2 id="modal-title">Ajouter une tâche</h2>
+          <form id="task-form">
+            <input type="hidden" id="task-id" />
+            <div class="form-group">
+              <label for="task-title">Titre</label>
+              <input type="text" id="task-title" required />
+            </div>
+            <div class="form-group">
+              <label for="task-description">Description</label>
+              <textarea
+                id="task-description"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="task-color">Couleur</label>
+              <select id="task-color">
+                <option value="green">Vert</option>
+                <option value="blue">Bleu</option>
+                <option value="purple">Violet</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Rose</option>
+              </select>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="save-btn">Enregistrer</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script src="models.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
