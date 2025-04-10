@@ -22,7 +22,6 @@ Ce projet est une app TodoList développée en JS selon les principes de la POO.
 
 2. **app.js** (`app.js`)
    - Gère l'interface utilisateur et les interactions
-   - Fait le lien entre l'interface et le modèle de données
    - Point d'entrée de l'application
    - Initialise les instances et démarre l'application
 
