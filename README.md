@@ -46,7 +46,7 @@ TodoList/
 ├── style.css            // Styles CSS
 ├── models.js            // Classes Task et TaskList
 ├── app.js               // Logique d'interaction avec l'interface
-└── images/              // Arrière-plan et autres images
+└── images/              // Images
     └── bg.png           // Image d'arrière-plan
 ```
 
